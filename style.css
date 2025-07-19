@@ -1,0 +1,61 @@
+body {
+    background-color: #410445;
+    background-image: url('backimage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#salary-predictor-app {
+    color: #410445 !important;
+}
+
+.withScreencast .stApp {
+    /* background-color: #A5158C; */
+
+}
+
+.st-emotion-cache-6px8kg.e4man1110 {
+    background-image: url("backimage.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stMainBlockContainer.block-container.st-emotion-cache-1w723zb.e4man114 .column {
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.st-emotion-cache-pp1cl0 p {
+    color: rgb(255, 255, 255);
+}
+
+.st-emotion-cache-hpex6h.e8lt0n73 {
+    color: rgb(255, 255, 255);
+}
+
+.st-emotion-cache-9fqyt2.e1fxfrsf0 {
+    color: rgb(32, 21, 21);
+}
+
+.st-emotion-cache-9fqyt2.e1fxfrsf0 p {
+    color: white;
+
+}
+
+.stAlert {
+    background-color: black;
+}
+
+.st-emotion-cache-8fjoqp {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0px 25px 50px;
+}

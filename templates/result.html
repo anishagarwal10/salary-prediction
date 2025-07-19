@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="box">
+        <h2>🎉 Prediction Result</h2>
+        <p><strong>Age:</strong> {{ age }}</p>
+        <p><strong>Experience:</strong> {{ experience }} years</p>
+        <p><strong>Predicted Salary:</strong> {{ salary }}</p>
+        <a href="/">🔙 Predict Again</a>
+    </div>
+</body>
+
+</html>

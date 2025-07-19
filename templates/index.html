@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Salary Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="box">
+        <h1>💼 Salary Predictor</h1>
+        <form action="/predict" method="post">
+            <label>Enter Your Age:</label>
+            <input type="number" name="age" min="18" max="65" required><br><br>
+
+            <label>Years of Experience:</label>
+            <select name="experience" required>
+                {% for i in range(0, 41) %}
+                <option value="{{ i/2 }}">{{ i/2 }} Years</option>
+                {% endfor %}
+            </select><br><br>
+
+            <button type="submit">🔮 Predict Salary</button>
+        </form>
+    </div>
+</body>
+
+</html>
