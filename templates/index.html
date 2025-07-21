@@ -1,27 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Salary Predictor</title>
+    <meta charset="UTF-8">
+    <title>Salary Prediction</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
-    <div class="box">
-        <h1>💼 Salary Predictor</h1>
-        <form action="/predict" method="post">
-            <label>Enter Your Age:</label>
-            <input type="number" name="age" min="18" max="65" required><br><br>
-
-            <label>Years of Experience:</label>
-            <select name="experience" required>
-                {% for i in range(0, 41) %}
-                <option value="{{ i/2 }}">{{ i/2 }} Years</option>
-                {% endfor %}
-            </select><br><br>
-
-            <button type="submit">🔮 Predict Salary</button>
+    <div class="container">
+        <h1>Salary Prediction</h1>
+        <form action="/predict" method="POST">
+            <input type="number" name="experience" placeholder="Enter Years of Experience" step="any" required>
+            <button type="submit">Predict</button>
         </form>
+        {% if prediction_text %}
+        <p class="result">{{ prediction_text }}</p>
+        {% endif %}
     </div>
 </body>
 
